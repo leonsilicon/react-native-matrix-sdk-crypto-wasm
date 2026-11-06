@@ -1,0 +1,77 @@
+{
+  "name": "react-native-matrix-sdk-crypto-wasm",
+  "version": "0.1.0",
+  "description": "@matrix-org/matrix-sdk-crypto-wasm for React Native: the same Rust crypto, translated from WebAssembly to C with wasm2c and called through JSI.",
+  "keywords": [
+    "e2ee",
+    "hermes",
+    "jsi",
+    "matrix",
+    "matrix-js-sdk",
+    "react-native",
+    "turbo-module",
+    "wasm2c"
+  ],
+  "homepage": "https://github.com/leonsilicon/react-native-matrix-sdk-crypto-wasm#readme",
+  "bugs": "https://github.com/leonsilicon/react-native-matrix-sdk-crypto-wasm/issues",
+  "license": "Apache-2.0",
+  "author": "Leon Si",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leonsilicon/react-native-matrix-sdk-crypto-wasm.git",
+    "directory": "npm/react-native-matrix-sdk-crypto-wasm"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "loader.js",
+    "loader.d.ts",
+    "glue.d.ts",
+    "types",
+    "src",
+    "cpp",
+    "ios",
+    "android/build.gradle",
+    "android/CMakeLists.txt",
+    "android/src",
+    "generated",
+    "MatrixSdkCryptoWasm.podspec",
+    "react-native.config.js",
+    "README.md",
+    "LICENSE",
+    "NOTICE"
+  ],
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "react-native": "./index.js",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    },
+    "./loader": {
+      "types": "./loader.d.ts",
+      "default": "./loader.js"
+    },
+    "./glue": {
+      "types": "./glue.d.ts",
+      "default": "./generated/matrix_sdk_crypto_wasm_bg.js"
+    },
+    "./build-info.json": "./generated/build-info.json",
+    "./package.json": "./package.json"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "react-native": ">=0.79"
+  },
+  "codegenConfig": {
+    "name": "MatrixSdkCryptoWasmSpec",
+    "type": "modules",
+    "jsSrcsDir": "src",
+    "android": {
+      "javaPackageName": "com.leonsilicon.matrixsdkcryptowasm"
+    }
+  }
+}

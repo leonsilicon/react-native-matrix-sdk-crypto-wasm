@@ -1,0 +1,17 @@
+react-native-matrix-sdk-crypto-wasm
+Copyright 2026 Leon Si
+
+This package contains material from other projects:
+
+- matrix-sdk-crypto-wasm (https://github.com/matrix-org/matrix-sdk-crypto-wasm),
+  Copyright The Matrix.org Foundation C.I.C., Apache License 2.0.
+  generated/c/mxcrypto* is its WebAssembly module translated to C by wasm2c,
+  generated/matrix_sdk_crypto_wasm_bg.js is its wasm-bindgen glue (patched; see
+  glue-patch.ts in the source repository), and types/ is its generated declarations.
+
+- The Rust crates matrix-sdk-crypto-wasm is built from (among them matrix-sdk-crypto,
+  vodozemac and ring), compiled into generated/c under their own licenses. The full
+  list is the Cargo.lock of the upstream version in generated/build-info.json.
+
+- WABT's wasm2c runtime (https://github.com/WebAssembly/wabt), Apache License 2.0,
+  in generated/c/wasm-rt.

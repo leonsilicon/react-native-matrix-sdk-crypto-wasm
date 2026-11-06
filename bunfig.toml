@@ -1,0 +1,3 @@
+[install]
+# The npm package peer-depends on react-native; the dev workspace never needs it installed.
+peer = false

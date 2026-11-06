@@ -1,0 +1,33 @@
+{
+  "name": "react-native-matrix-sdk-crypto-wasm-development",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Builds @matrix-org/matrix-sdk-crypto-wasm for React Native by translating its WebAssembly to C with wasm2c.",
+  "workspaces": {
+    "packages": [
+      "npm/*",
+      "packages/**"
+    ],
+    "catalog": {
+      "@types/node": "24.19.2",
+      "esbuild": "0.28.2",
+      "eslint-plugin-flatcap": "0.1.0",
+      "typescript": "7.0.2",
+      "vite-plus": "1.5.0"
+    }
+  },
+  "type": "module",
+  "scripts": {},
+  "devDependencies": {
+    "@-/com.leonsilicon.matrix-sdk-crypto-wasm.build": "workspace:*",
+    "@-/com.leonsilicon.matrix-sdk-crypto-wasm.hermes-harness": "workspace:*",
+    "@types/node": "catalog:",
+    "eslint-plugin-flatcap": "catalog:",
+    "typescript": "catalog:",
+    "vite-plus": "catalog:"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "packageManager": "bun@1.4.4"
+}

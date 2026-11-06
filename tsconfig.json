@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "strict": true,
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "erasableSyntaxOnly": true,
+    "verbatimModuleSyntax": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "types": ["node"],
+    "lib": ["esnext"]
+  },
+  "include": [
+    "packages/**/*.ts",
+    "npm/react-native-matrix-sdk-crypto-wasm/*.d.ts",
+    "npm/react-native-matrix-sdk-crypto-wasm/types/*.d.ts",
+    "vite.config.ts"
+  ]
+}

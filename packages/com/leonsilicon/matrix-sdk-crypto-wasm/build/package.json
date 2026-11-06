@@ -1,0 +1,25 @@
+{
+  "name": "@-/com.leonsilicon.matrix-sdk-crypto-wasm.build",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Builds the matrix-sdk-crypto-wasm crate, translates its WebAssembly to C with wasm2c, and generates the JSI bindings for the React Native package.",
+  "bin": {
+    "_build-crypto": "./_build-crypto.ts"
+  },
+  "type": "module",
+  "imports": {
+    "#build-crypto": "./build-crypto.ts",
+    "#glue-patch": "./glue-patch.ts",
+    "#jsi-bindings": "./jsi-bindings.ts",
+    "#paths": "./paths.ts",
+    "#pins": "./pins.ts",
+    "#toolchain": "./toolchain.ts",
+    "#wasm2c-header": "./wasm2c-header.ts"
+  },
+  "exports": {
+    ".": "./+.ts"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:"
+  }
+}

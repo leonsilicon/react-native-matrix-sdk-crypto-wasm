@@ -1,0 +1,3 @@
+[submodule "packages/com/leonsilicon/matrix-sdk-crypto-wasm/build/@upstream"]
+	path = packages/com/leonsilicon/matrix-sdk-crypto-wasm/build/@upstream
+	url = https://github.com/matrix-org/matrix-sdk-crypto-wasm.git

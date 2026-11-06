@@ -1,0 +1,17 @@
+{
+  "one_time_keys": {
+    "@example:localhost": {
+      "AFGUOBTZWM": {
+        "signed_curve25519:AAAABQ": {
+          "key": "9IGouMnkB6c6HOd4xUsNv4i3Dulb4IS96TzDordzOws",
+          "signatures": {
+            "@example:localhost": {
+              "ed25519:AFGUOBTZWM": "2bvUbbmJegrV0eVP/vcJKuIWC3kud+V8+C0dZtg4dVovOSJdTP/iF36tQn2bh5+rb9xLlSeztXBdhy4c+LiOAg"
+            }
+          }
+        }
+      }
+    }
+  },
+  "failures": {}
+}
