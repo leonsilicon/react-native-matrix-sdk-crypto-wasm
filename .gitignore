@@ -7,3 +7,4 @@ node_modules/
 # Build output of `vpr build:crypto`. It is large (about 130 MB of C) and is
 # rebuilt from the pinned upstream crate, so it ships in the npm tarball, not git.
 npm/react-native-matrix-sdk-crypto-wasm/generated/
+.claude/settings.local.json
